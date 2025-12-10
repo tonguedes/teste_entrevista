@@ -11,9 +11,6 @@ class ProdutosDashboard extends Component
     // Array that holds all products displayed in the dashboard
     public array $produtos = [];
 
-    // Search term, if filtering functionality is implemented
-    public $search = '';
-
     // Form fields for creating or editing a product
     public $nome = '';
     public $preco = '';
