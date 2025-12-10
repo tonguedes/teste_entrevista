@@ -45,7 +45,7 @@ Certifique-se de ter instalado:
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/tonguedes/teste_entrevista.git
 cd seu-projeto
 
 2️⃣ Instale as dependências do PHP
