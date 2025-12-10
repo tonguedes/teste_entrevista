@@ -40,6 +40,26 @@ Certifique-se de ter instalado:
 
 ---
 
+🧩 Componentes Principais
+✔ Livewire 3
+
+ProdutosDashboard — CRUD completo no Dashboard
+Produtos — CRUD simples
+Eventos Livewire 3 ($this->dispatch('notify'))
+
+✔ API REST
+
+GET /api/produtos
+
+POST /api/produtos
+
+PUT /api/produtos/{id}
+
+DELETE /api/produtos/{id}
+
+Transformações via ProdutoResource
+
+
 ## 🔧 Instalação e configuração
 
 ### 1️⃣ Clone o repositório
@@ -83,4 +103,15 @@ Acesse o projeto:
 http://localhost:8000
 
 Ao acessar o projeto será redirecionado para a tela de registro, ai só cadastrar um usuário já ira para o dashboard quando fizer o login.
+------------------------------------------------------------------------------------------------------------------------------------
+Script SQL (crie teste_entrevista.sql)
+CREATE DATABASE IF NOT EXISTS `teste_entrevista` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `teste_entrevista`;
+CREATE TABLE `produtos` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `nome` VARCHAR(150) NOT NULL,
+  `preco` DECIMAL(10,2) NOT NULL,
+  `created_at` TIMESTAMP NULL DEFAULT NULL,
+  `updated_at` TIMESTAMP NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
